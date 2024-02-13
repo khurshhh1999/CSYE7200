@@ -106,7 +106,6 @@ object Movie extends App {
       val aspectRatio = parts(26).toDouble
       val duration = parts(3).toInt
       val formatParams = List(parts(0), parts(19), parts(26), parts(3))
-      // Assuming `Format.apply(List[String])` correctly interprets the first element for color
       val format = Format(formatParams)
 
       val country = parts(20)
@@ -157,11 +156,7 @@ object Movie extends App {
     // Hint: form a new list which is consisted by the elements in list in position indices. Int* means array of Int.
     // 6 points
     val result: Seq[String] = {
-      // TO BE IMPLEMENTED
-
-      // STUB
       indices.map(list(_)).toList
-      // END
     }
     result.toList
   }
