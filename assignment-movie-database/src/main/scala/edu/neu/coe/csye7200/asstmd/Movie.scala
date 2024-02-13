@@ -238,7 +238,6 @@ object Rating {
   // Hint: This should similar to apply method in Object Name. The parameter of apply in case match should be same as case class Rating
   // 13 points
   def apply(s: String): Rating = {
-    // TO BE IMPLEMENTED
     val parts = s.split("-").toList
     parts match {
       case code :: Nil => Rating(code, None)
